@@ -42,7 +42,7 @@ public class ShoppingCartBean implements Serializable {
     @Inject
     private transient JMSContext jmsContext;
 
-    @Resource(lookup = "jms/queue/invoiceQueue")
+    @Resource(lookup = "java:/jms/queue/invoiceQueue")
     private Queue queue;
 
     @Inject
